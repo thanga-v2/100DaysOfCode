@@ -22,7 +22,6 @@ var derSign = signature.toDER();
 console.log(key.verify(msgHash, derSign));
 
 // CHECK WITH NO PRIVATE KEY
-
 var pubPoint = key.getPublic();
 var x = pubPoint.getX();
 var y = pubPoint.getY();
