@@ -11,6 +11,7 @@ console.log("\ngenerated private key",key);
 
 // Sign the message's hash (input must be an array, or a hex-string)
 var msgHash = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+var crossverify = [ 0 , 0 ]
 console.log("\nmessage hash",msgHash);
 var signature = key.sign(msgHash);
 console.log("\nsignature ",signature);
@@ -57,3 +58,6 @@ console.log("key consolidated :",key);
 
 // Verify signature
 console.log(key.verify(msgHash, signature));
+
+//cross verify
+// console.log(key.verify(crossverify, signature));
