@@ -9,4 +9,3 @@ cd fork-off-substrate
 npm i
 
 mkdir data
-
